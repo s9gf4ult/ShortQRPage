@@ -2,7 +2,7 @@
 
 class SpecialShortQRPage extends SpecialPage {
         function __construct() {
-                parent::__construct( 'MyExtension' );
+                parent::__construct( 'SpecialShortQRPage' );
         }
  
         function execute( $par ) {

@@ -15,10 +15,8 @@ $wgExtensionCredits['specialpage'][] =
 
 $dir = __FILE__ . '/';
 
-$wgAutoloadClasses['ShortQRPage'] = $dir . 'SpecialShortQRPage.php';
-
-        
-                                             
+$wgAutoloadClasses['SpecialShortQRPage'] = $dir . 'SpecialShortQRPage.php';
+$wgSpecialPages['ShortQRPage'] = 'SpecialShortQRPage';
 
 
 ?>

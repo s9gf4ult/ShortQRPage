@@ -18,7 +18,7 @@ class SpecialShortQRPage extends SpecialPage {
                 $output = "{{#qrcode: ecc=H
  | size=4
  | boundary=5
- | label=$par
+ | label=http://qrgorod.ru/s/$par
  | scheme=http
 }}";
                 $wgOut->addWikiText( $output );

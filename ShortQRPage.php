@@ -8,10 +8,9 @@ require_once( "\$IP/extensions/ShortQRPage/ShortQRPage.php" );'
         exit( 1 );
 }
 
-$wgExtensionCredits['specialpage'][] =
-  array('path' => __FILE__,
-        'name' => 'ShortQRPage',
-        'url' => 'https://github.com/s9gf4ult/ShortQRPage');
+$wgExtensionCredits['specialpage'][] = array('path' => __FILE__,
+                                             'name' => 'ShortQRPage',
+                                             'url' => 'https://github.com/s9gf4ult/ShortQRPage');
 
 $dir = __FILE__ . '/';
 

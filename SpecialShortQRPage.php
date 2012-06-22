@@ -12,11 +12,11 @@ class SpecialShortQRPage extends SpecialPage {
  
     # Get request data from, e.g.
       $param = $wgRequest->getText('param');
- 
-    # Do stuff
-      # ...
-      $output = "
-=http://qrgorod.ru/s/$par=
+
+    $title = ShortUrlUtils::decodeURL($par)->getText();
+    
+    $output = "
+=$title=
 {{#qrcode: ecc=H
  | size=4
  | boundary=5

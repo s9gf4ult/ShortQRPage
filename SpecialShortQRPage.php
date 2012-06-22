@@ -15,7 +15,12 @@ class SpecialShortQRPage extends SpecialPage {
  
                 # Do stuff
                 # ...
-                $output = 'Hello world!';
+                $output = '{{#qrcode: ecc=H
+ | size=4
+ | boundary=5
+ | label=Hello world
+ | scheme=http
+}}';
                 $wgOut->addWikiText( $output );
         }
 }

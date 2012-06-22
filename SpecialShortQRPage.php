@@ -1,28 +1,30 @@
 <?php
 
 class SpecialShortQRPage extends SpecialPage {
-        function __construct() {
-                parent::__construct( 'ShortQRPage' );
-        }
+  function __construct() {
+    parent::__construct( 'ShortQRPage' );
+  }
  
-        function execute( $par ) {
-                global $wgRequest, $wgOut;
+  function execute( $par ) {
+    global $wgRequest, $wgOut;
  
-                $this->setHeaders();
+    $this->setHeaders();
  
-                # Get request data from, e.g.
-                $param = $wgRequest->getText('param');
+    # Get request data from, e.g.
+      $param = $wgRequest->getText('param');
  
-                # Do stuff
-                # ...
-                $output = "{{#qrcode: ecc=H
+    # Do stuff
+      # ...
+      $output = "
+=http://qrgorod.ru/s/$par=
+{{#qrcode: ecc=H
  | size=4
  | boundary=5
  | label=http://qrgorod.ru/s/$par
  | scheme=http
 }}";
-                $wgOut->addWikiText( $output );
-        }
+    $wgOut->addWikiText( $output );
+  }
 }
 
 

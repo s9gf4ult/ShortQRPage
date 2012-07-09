@@ -17,7 +17,7 @@ class SpecialShortQRPage extends SpecialPage {
     
     $output = "
 =$title=
-{{#qrcode: ecc=H
+{{#qrcode: ecc=L
  | size=27
  | boundary=5
  | label=http://qrgorod.ru/s/$par

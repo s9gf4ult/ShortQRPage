@@ -20,7 +20,7 @@ class SpecialShortQRPage extends SpecialPage {
 {{#qrcode: ecc=L
  | size=27
  | boundary=5
- | label=http://qrgorod.ru/s/$par
+ | label=http://qrgorod.com/s/$par
  | scheme=http
 }}";
     $wgOut->addWikiText( $output );

@@ -9,9 +9,6 @@ class SpecialShortQRPage extends SpecialPage {
     global $wgRequest, $wgOut;
  
     $this->setHeaders();
- 
-    # Get request data from, e.g.
-      $param = $wgRequest->getText('param');
 
     $title = ShortUrlUtils::decodeURL($par)->getText();
     
